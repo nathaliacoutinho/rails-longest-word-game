@@ -1,0 +1,19 @@
+<div class="container">
+<h1>Welcome to the longest word game!</h1>
+
+<% @grid.each do |letter| %>
+<div class="letters"><%= letter %></div>
+<% end %>
+</div>
+
+<form action="/score">
+
+  <label for="guess">What is the longes word you can find?</label>
+  <br>
+  <input type="text" id="guess" name="attempt" placeholder="My best guess">
+  <%= hidden_field_tag :grid, @grid %>
+  <%= hidden_field_tag :start_time, @start_time %>
+  <input type="submit" value="Go !">
+</form>
+
+

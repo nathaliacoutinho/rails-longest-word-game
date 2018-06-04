@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3 text-center">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Your results!</h3>
+      </div>
+      <div class="panel-body">
+        <table class="table table-striped">
+          <!-- <h5>Your word: <%= @answer %></h5> -->
+          <p>Time: <%= @time %></p>
+          <p>Score: <%= @score %></p>
+          <p> <%= @message%></p>
+        </table>
+        <%= link_to "Play again", score_path, :class => "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
