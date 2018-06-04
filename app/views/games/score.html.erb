@@ -6,12 +6,11 @@
       </div>
       <div class="panel-body">
         <table class="table table-striped">
-          <!-- <h5>Your word: <%= @answer %></h5> -->
           <p>Time: <%= @time %></p>
           <p>Score: <%= @score %></p>
           <p> <%= @message%></p>
         </table>
-        <%= link_to "Play again", score_path, :class => "btn btn-primary" %>
+        <%= link_to "Play again", new_path %>
       </div>
     </div>
   </div>
